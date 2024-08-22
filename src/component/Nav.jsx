@@ -3,13 +3,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import menuList from "../data/menulist";
+import { useNavigate } from "react-router-dom";
 
 const Nav = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="login-btn">
         <FontAwesomeIcon icon={faUser} />
-        <div>로그인</div>
+        <div
+          onClick={() => {
+            navigate("/login");
+          }}
+        >
+          로그인
+        </div>
       </div>
       <div className="nav-section">
         <img

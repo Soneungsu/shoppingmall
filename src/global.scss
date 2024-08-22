@@ -41,3 +41,13 @@
     }
   }
 }
+
+.card {
+  cursor: pointer;
+  img {
+    &:hover {
+      transform: scale(1.1, 1.1);
+      transition: transform 0.4s;
+    }
+  }
+}

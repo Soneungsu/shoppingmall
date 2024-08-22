@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductCard = (props) => {
   return (
-    <div>
+    <div className="card">
       <img src={props.item?.img} alt="이미지" />
       <div>{props.item?.choice === true ? "Conscious choice" : ""}</div>
       <div>{props.item?.title}</div>
