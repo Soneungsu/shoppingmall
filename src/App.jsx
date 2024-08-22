@@ -4,6 +4,7 @@ import { ProuductAll } from "./pages/ProuductAll";
 import Login from "./pages/Login";
 import Detail from "./pages/Detail";
 import Nav from "./component/Nav";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./global.scss";
 
 function App() {
