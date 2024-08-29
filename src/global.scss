@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .menu-items-searchbox {
@@ -29,13 +30,27 @@
     }
   }
 }
-.serch-box {
+
+.search-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  margin: 20px 0;
-  .input-box {
-    border-radius: 8px;
+  max-width: 1500px;
+  width: calc(100% - 40px);
+  .serch-box {
+    margin: 20px 0;
+    position: relative;
+    .search-icon {
+      position: absolute;
+      top: 50%;
+      right: 3%;
+      transform: translateY(-50%);
+    }
+    .input-box {
+      width: 200px;
+      padding: 0 10px;
+      border-radius: 10px;
+    }
   }
 }
 

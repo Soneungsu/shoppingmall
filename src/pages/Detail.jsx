@@ -24,6 +24,7 @@ Soneungsu/shoppingmall/products/${id}`;
         <Col>
           <div>{product?.title}</div>
           <div>{product?.price}</div>
+          <div>{product?.choice === true ? "choice" : ""}</div>
         </Col>
       </Row>
     </Container>

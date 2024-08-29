@@ -23,6 +23,9 @@ const Nav = () => {
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXpRqYm8ZV9DX0FdTQzy6Lpcm6GMKfBbNO7Q&s"
           alt="이미지 로고"
+          onClick={() => {
+            navigate("/");
+          }}
         />
       </div>
       <div className="menu-items-searchbox">
@@ -32,13 +35,15 @@ const Nav = () => {
           })}
         </ul>
       </div>
-      <div className="serch-box">
-        <FontAwesomeIcon icon={faSearch} className="search-icon" />
-        <input
-          type="text"
-          className="input-box"
-          placeholder="상품명을 검색해주세요"
-        />
+      <div className="search-container">
+        <div className="serch-box">
+          <FontAwesomeIcon icon={faSearch} className="search-icon" />
+          <input
+            type="text"
+            className="input-box"
+            placeholder="상품명을 검색해주세요"
+          />
+        </div>
       </div>
     </div>
   );
