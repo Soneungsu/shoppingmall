@@ -14,31 +14,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   .menu-items {
+    max-width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     li {
       cursor: pointer;
-      padding: 20px;
+      padding: 0 15px;
       &:hover {
         text-decoration: underline;
       }
     }
   }
-  .serch-box {
-    position: absolute;
-    right: 100px;
-    .search-icon {
-      position: absolute;
-      right: 160px;
-      top: 20%;
-    }
-    .input-box {
-      width: 130px;
-      height: 25px;
-      border-radius: 5px;
-      border: 1px solid black;
-      padding: 0 25px;
-    }
+}
+.serch-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  .input-box {
+    border-radius: 8px;
   }
 }
 

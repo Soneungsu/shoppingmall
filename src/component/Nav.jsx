@@ -31,11 +31,14 @@ const Nav = () => {
             return <li key={index}>{item}</li>;
           })}
         </ul>
-
-        <div className="serch-box">
-          <FontAwesomeIcon icon={faSearch} className="search-icon" />
-          <input type="text" className="input-box" />
-        </div>
+      </div>
+      <div className="serch-box">
+        <FontAwesomeIcon icon={faSearch} className="search-icon" />
+        <input
+          type="text"
+          className="input-box"
+          placeholder="상품명을 검색해주세요"
+        />
       </div>
     </div>
   );
